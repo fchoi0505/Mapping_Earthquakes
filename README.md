@@ -6,6 +6,8 @@ The images below illustrate the following activities performed:
 2.  Addition of popup markers for each earthquake that displays the magnitude and location of the earthquake.
 3.  Addition of a third map style that displays a dark map
 
+Note:  All module 13 chapter work was performed in a separate repository to keep the challenge repository focused.
+
 Website viewable at:   https://fchoi0505.github.io/Mapping_Earthquakes/
 
 
