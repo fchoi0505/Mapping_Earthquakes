@@ -144,7 +144,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
     if (magnitude > 4) {
       return "#ea822c";
     }
-    if (magnitude <4) {
+    if (magnitude < 4) {
       return "#ee9c00";
     }
     return "#98ee00";
@@ -164,12 +164,13 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   L.geoJson(data, {
     pointToLayer: function(feature, latlng) {
       console.log(data);
-      return L.circleMarker(latlng)},
+      return L.circleMarker(latlng);
+    },
     style: styleInfo,
     onEachFeature: function(feature, layer) {
       layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
     }
-  }).addTo(allEarthquakes);
+  }).addTo(majorEarthquakes);
   // 8. Add the major earthquakes layer to the map.
   majorEarthquakes.addTo(map);
   // 9. Close the braces and parentheses for the major earthquake data.
